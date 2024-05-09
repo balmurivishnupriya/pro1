@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Practice Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+    <div class="container">
+     <br>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./ab.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./ser.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./port.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./cont.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<br>
+<main>
+  <!-- Jumbotron -->
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h4 class="display-4">Welcome to My Creative Playground</h4>
+      <p class="lead">Engineering Elegance</p>
+
+    </div>
+  </section>
+  <br>
+
+  <!-- Grid System -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <!-- Card 1 -->
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4cAvXHYM92e_GGblGU3Qp625K-R-EkLXRbA&s" class="card-img-top" alt="..." height="200" width="300">
+          <div class="card-body">
+           
+            <p class="card-text">HTML</p>
+            <a href="https://www.w3schools.com/html/" class="btn btn-primary" target="_blank">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <!-- Card 2 -->
+        <div class="card">
+          <img src="data:image/png;base64,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" class="card-img-top" height="200" width="300" alt="...">
+          <div class="card-body">
+            
+            <p class="card-text">CSS & JS</p>
+            <a href="https://www.geeksforgeeks.org/difference-between-css-and-javascript/" class="btn btn-primary" target="_blank">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <!-- Card 3 -->
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt4Qv4f84Q4EYCCbq4PcfCRSPDhVS-kFAX-w&s" class="card-img-top"  height="200" width="300"alt="...">
+          <div class="card-body">
+ 
+            <p class="card-text">BOOTSTRAP</p>
+            <a href="https://www.w3schools.com/bootstrap/" class="btn btn-primary" target="_blank">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<br>
+<br>
+
+
+<footer class="text-center bg-dark text-light py-2" >
+  <p>&copy; vishnupriyabalmuri. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
